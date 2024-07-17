@@ -108,6 +108,12 @@ export async function GET({ request }) {
         catch (err) { ; }
     </script>
     <script language="JavaScript">
+      const hello = document.getElementById("hello");
+      function toggleDisplay() {
+        hello.style.display = hello.style.display === "none" ? "block" : "none";
+      }
+    </script>
+    <script language="JavaScript">
         var winName = 'win4';
         var winParent = null;
         var modalID = null;
@@ -900,7 +906,7 @@ export async function GET({ request }) {
                             <div class="ps_pspagecontainer_md" id="win4divPSPAGECONTAINER_MD">
                                 <div class="ps_box-group ps_ag-targetcontent" id="divPAGECONTAINER_TGT">
                                     <div class="ps_box-group psc_layout ps_apps_content" id="win4div$ICField1"><div class="ps_box-group psc_layout" id="win4div$ICField4"><div class="ps_box-group ps_box-title ps_box-mdtitle psa_pagetitle" id="win4divPANEL_TITLE"><h1 id="PANEL_TITLE" class="ps_pagetitle"><span class="ps-text" id="PANEL_TITLElbl">Grade Details</span></h1></div><div class="ps_box-group psc_layout psa_pageaction" id="win4div$ICField5"></div></div><div class="ps_box-group psc_layout psc_float-clear" id="win4div$ICField$7$"><div class="ps_box-group psc_layout" id="win4div$ICField47"><div class="ps_box-group psc_layout" id="win4divDERIVED_ACRD_FL_SSR_DISPLY_GPA_GBX"><div class="ps_box-group psc_layout  psa_list-grid-anchor" id="win4divDERIVED_ACRD_FL_GROUPBOX1"><div class="ps_box-group psc_layout  ps_box-grid-list" id="win4divDERIVED_ACRD_FL_GROUPBOX"><div class="ps_box-grid-flex psc_grid-nohbar psa_cum-gpa psa_bottom-none-anchor psc_show-actionable" id="win4divCUM_GPA$0"><div class="ps_box-grid-header" id="win4divCUM_GPAhdr$0"><div class="ps_box-grid-title"></div><div class="ps_box-grid-header_bar"></div></div><div class="ps_box-gridc" id="win4divCUM_GPAgridc$0"><div class="ps_box-gridc-right" id="win4divCUM_GPAgridc-right$0"><div class="ps_box-grid" id="win4divCUM_GPA$grid$0"><table class="ps_grid-flex" role="presentation"><tbody class="ps_grid-body"><tr class="ps_grid-row psc_rowact" id="CUM_GPA$0_row_0" tabindex="0" data-role="button" onclick="javascript:OnRowAction(this,'DERIVED_ACRD_FL_DESCRFORMAL$0');cancelBubble(event);">
-                                        <td class="ps_grid-cell psc_trigger">
+                                        <td class="ps_grid-cell psc_trigger" onclick="toggleDisplay">
                                         <div class="ps_box-link psc_trigger psc_trigger  ps_box-label ps-label psa_bold-anchor psa_overflow" id="win4divDERIVED_ACRD_FL_DESCRFORMAL$0"><span id="DERIVED_ACRD_FL_DESCRFORMAL$span$0" class="ps-link-wrapper" title="Overall Year Mark "><a id="DERIVED_ACRD_FL_DESCRFORMAL$0" class="ps-link" ptlinktgt="pt_peoplecode" tabindex="-1" onclick="javascript:cancelBubble(event);" href="javascript:submitAction_win4(document.win4,'DERIVED_ACRD_FL_DESCRFORMAL$0');">Overall Year Mark</a></span></div></td>
                                         <td class="ps_grid-cell">
                                         <div class="ps_box-edit psc_disabled psc_label-suppressed psc_has_value  psc_label-none psc_inline  psa_bold-anchor" id="win4divDERIVED_ACRD_FL_DESCR50$0"><span class="ps_box-value" id="DERIVED_ACRD_FL_DESCR50$0">73.268</span>
