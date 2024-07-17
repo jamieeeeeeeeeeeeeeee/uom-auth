@@ -110,7 +110,7 @@ export async function GET({ request }) {
     <script language="JavaScript">
       function toggleDisplay() {
         const hello = document.getElementById("hello");
-        hello.style.display = hello.style.display === "none" ? "a" : "none";
+        hello.style.display = hello.style.display === "none" ? "table-row" : "none";
       }
     </script>
     <script language="JavaScript">
