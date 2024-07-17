@@ -108,8 +108,8 @@ export async function GET({ request }) {
         catch (err) { ; }
     </script>
     <script language="JavaScript">
-      const hello = document.getElementById("hello");
       function toggleDisplay() {
+        const hello = document.getElementById("hello");
         hello.style.display = hello.style.display === "none" ? "block" : "none";
       }
     </script>
