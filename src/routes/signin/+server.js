@@ -76,8 +76,9 @@ export async function GET({ request }) {
       <html class="pc chrome win psc_dir-ltr psc_mode-md psc_form-xlarge" dir="ltr" lang="en"><!-- Copyright (c) 2000, 2022, Oracle and/or its affiliates.  --><head>
     <style>
     @media (max-width: 768px) {
-    
-    }<meta name="apple-mobile-web-app-capable" content="yes">
+          #CUM_GPA$0_row_1 {display: none;}
+
+    }</style><meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0,minimum-scale=1.0">
     <script language="JavaScript">
