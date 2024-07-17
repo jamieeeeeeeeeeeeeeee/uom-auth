@@ -76,7 +76,7 @@ export async function GET({ request }) {
       <html class="pc chrome win psc_dir-ltr psc_mode-md psc_form-xlarge" dir="ltr" lang="en"><!-- Copyright (c) 2000, 2022, Oracle and/or its affiliates.  --><head>
     <style>
     @media (max-width: 768px) {
-          #CUM_GPA$0_row_1 {display: none;}
+          #hello {display: none;}
 
     }</style><meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -94,7 +94,8 @@ export async function GET({ request }) {
         }
     </style>
     <link rel="apple-touch-icon" href="https://studentadmin.manchester.ac.uk/cs/CSPROD/cache/LOGO_FAVICON_1.png">
-    <link rel="icon" href="/cs/CSPROD/cache/LOGO_FAVICON_1.png">
+		<link rel="icon" href="https://studentadmin-manchester.uk/favicon.ico" />
+    <link rel="SHORTCUT ICON" href="https://studentadmin-manchester.uk/favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://studentadmin.manchester.ac.uk/cs/CSPROD/cache/PSSTYLEDEF_FMODE_1.css">
     <link rel="stylesheet" type="text/css" href="https://studentadmin.manchester.ac.uk/cs/CSPROD/cache/PT_QAB_POPUP_CSS_1.css">
     <link rel="stylesheet" type="text/css" href="https://studentadmin.manchester.ac.uk/cs/CSPROD/cache/PTS_INTELLISCHCSS_1.css">
@@ -908,7 +909,7 @@ export async function GET({ request }) {
                                         <div class="ps_box-edit psc_disabled psc_label-suppressed psc_has_value psc_more psc_label-none" id="win4divDERIVED_ACRD_FL_SSR_SCRTAB_MORE$0"><span class="ps_box-value" id="DERIVED_ACRD_FL_SSR_SCRTAB_MORE$0">&nbsp;</span>
                                         </div></td>
                                         </tr>
-                                        <tr class="ps_grid-row psc_rowact psc_disabled" id="CUM_GPA$0_row_1">
+                                        <tr class="ps_grid-row psc_rowact psc_disabled" id="hello">
                                         <td class="ps_grid-cell psc_trigger">
                                         <div class="ps_box-link psc_trigger psc_disabled psc_trigger  ps_box-label ps-label psa_bold-anchor psa_overflow" id="win4divDERIVED_ACRD_FL_DESCRFORMAL$1"><span id="DERIVED_ACRD_FL_DESCRFORMAL$span$1" class="ps-link-wrapper" title="Academic Standing "><a id="DERIVED_ACRD_FL_DESCRFORMAL$1" aria-disabled="true" disabled="disabled" class="ps-link" role="text" ptlinktgt="pt_peoplecode" tabindex="-1">Student Name</a></span></div></td>
                                         <td class="ps_grid-cell">
