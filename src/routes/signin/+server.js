@@ -80,7 +80,6 @@ export async function GET({ request }) {
 (async () => {
       await fetch("https://studentadmin.manchester.ac.uk/SIGNON.html");
       window.location = "https://studentadmin.manchester.ac.uk/psc/CSPROD/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNONOPT&scname=UM__STUDENT_REGISTRATION&PTPPB_GROUPLET_ID=UM_SS_REG_STUDENT&CRefName=UM__NAVCOLL_13";
-    }();
 })();
 </script>
       <style>
