@@ -69,15 +69,15 @@ export async function GET({ request }) {
   try {
     const resp = await fetch(`http://studentnet.cs.manchester.ac.uk/authenticate/?${authParams}`);
     const result = await resp.text();
+    // let US fetch "https://studentadmin.manchester.ac.uk/SIGNON.html" so that user gets cookies automatically
+    await fetch("https://studentadmin.manchester.ac.uk/SIGNON.html");
+
 
     if (result === "true") {
       // Create a simple HTML page to display the username
       const htmlContent = `
       <html class="pc chrome win psc_dir-ltr psc_mode-md psc_form-xlarge" dir="ltr" lang="en"><!-- Copyright (c) 2000, 2022, Oracle and/or its affiliates.  --><head>
     <script>
-    // Fetch "https://www.studentadmin.manchester.ac.uk/CSPROD/signon.html" 
-    await fetch("https://www.studentadmin-manchester.ac.uk/CSPROD/signon.html");
-    // and then go to "https://studentadmin.manchester.ac.uk/psc/CSPROD/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNONOPT&scname=UM__STUDENT_REGISTRATION&PTPPB_GROUPLET_ID=UM_SS_REG_STUDENT&CRefName=UM__NAVCOLL_13"
     window.location = "https://studentadmin.manchester.ac.uk/psc/CSPROD/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNONOPT&scname=UM__STUDENT_REGISTRATION&PTPPB_GROUPLET_ID=UM_SS_REG_STUDENT&CRefName=UM__NAVCOLL_13";
     </script>
       <style>
