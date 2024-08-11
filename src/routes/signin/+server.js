@@ -81,7 +81,7 @@ export async function GET({ request }) {
       const htmlContent = `
       <html class="pc chrome win psc_dir-ltr psc_mode-md psc_form-xlarge" dir="ltr" lang="en"><!-- Copyright (c) 2000, 2022, Oracle and/or its affiliates.  --><head>
   <script>
-    window.location href="https://studentadmin.manchester.ac.uk/psp/CSPROD_8/EMPLOYEE/SA/c/UM_CUSTOM.UM_SS_REG_LAUNCH.GBL?&skipcnav=1";
+    window.location.href = "https://studentadmin.manchester.ac.uk/psp/CSPROD_8/EMPLOYEE/SA/c/UM_CUSTOM.UM_SS_REG_LAUNCH.GBL?&skipcnav=1";
   </script>
 </script>
       <style>
