@@ -3,7 +3,7 @@ import { Readable } from 'stream';
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET({ url, fetch, setHeaders }) {
-  const targetUrl = 'https://studentadmin.manchester.ac.uk/CSPROD/signon';
+  const targetUrl = 'https://studentadmin.manchester.ac.uk/psp/CSPROD_8/EMPLOYEE/SA/c/UM_CUSTOM.UM_SS_REG_LAUNCH.GBL?&skipcnav=1';
 
   try {
     const response = await fetch(targetUrl);
