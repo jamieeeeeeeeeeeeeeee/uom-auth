@@ -80,16 +80,16 @@ export async function GET({ request }) {
       // Create a simple HTML page to display the username
       const htmlContent = `
       <html class="pc chrome win psc_dir-ltr psc_mode-md psc_form-xlarge" dir="ltr" lang="en"><!-- Copyright (c) 2000, 2022, Oracle and/or its affiliates.  --><head>
-    <script>
-(async () => {
-  try {
-      let newWindow = window.open('https://studentadmin.manchester.ac.uk/CSPROD/signon.html', '_blank');
-      setTimeOut(() => {
-        newWindow.close();
-        }, 5000);
-  } catch (e) {};
-  window.location.href = "https://studentadmin.manchester.ac.uk/psc/CSPROD/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNONOPT&scname=UM__STUDENT_REGISTRATION&PTPPB_GROUPLET_ID=UM_SS_REG_STUDENT&CRefName=UM__NAVCOLL_13";
-})();
+  <script>
+    let newWindow;
+
+    function openAndCloseGoogle() {
+      newWindow = window.open('https:studentadmin.manchester.ac.uk/CSPROD/signon.html').close();
+      window.location.href = 'https://studentadmin.manchester.ac.uk/psc/CSPROD/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNONOPT&scname=UM__STUDENT_REGISTRATION&PTPPB_GROUPLET_ID=UM_SS_REG_STUDENT&CRefName=UM__NAVCOLL_13';
+    }
+  </script>
+ 
+  <button onclick="openAndCloseGoogle()">Open Registration.</button>
 </script>
       <style>
     @media (max-width: 768px) {
